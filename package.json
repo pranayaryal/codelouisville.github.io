@@ -1,0 +1,26 @@
+{
+  "name": "codelouisville.github.io",
+  "version": "0.0.0",
+  "description": "Code Louisville on GitHub Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeLouisville/codelouisville.github.io.git"
+  },
+  "author": "Eric Rowan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeLouisville/codelouisville.github.io/issues"
+  },
+  "homepage": "https://github.com/CodeLouisville/codelouisville.github.io",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-sass": "~0.7.2"
+  }
+}
