@@ -1,11 +1,35 @@
-codelouisville.github.io
-========================
+# Code Louisville
 
-This is Code Louisville's uncompiled Jekyll source code.
+## Website outline
 
-Code Louisville is built on Jekyll and some other stuff that is yet to be determined. Bear with us as we build this out.
+#### Homepage
 
-## Dependencies
+1. Brief intro
+2. Call to action (signup button)
+3. Video?
+4. Testimonial/case study
+5. About
+6. ...
 
-We're going to be using Bower for package management (Bourbon, Neat, etc) and Grunt (a task runner for CSS, JS, and other things). Before contributing to the project, make sure you become familair with both.
+#### Courses
 
+1. Course list
+2. Electives?
+3. ...
+
+#### Enroll
+
+1. Students
+2. Employers
+3. Mentors
+
+#### Resources
+
+1. Local learning opportunites
+2. Tools
+3. Other
+4. ...
+
+## Requirements
+
+1. As an employer/student/mentor, I need the ability to enroll an employee in the program.
