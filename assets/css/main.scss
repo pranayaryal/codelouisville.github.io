@@ -20,7 +20,11 @@ $x-large: new-breakpoint(min-width em(1280) 12);
 $base-unit: 4em;
 
 
-// Global variables
+// Global styles
+
+.button, .btn {
+    @include button;
+}
 
 
 // Typography
@@ -108,12 +112,18 @@ header.site-header {
         padding: ($base-unit * 3) $base-unit;
     }
 
-    .homepage-hero {
+    .hero-title {
         @include media($medium) {
             font-size: $base-unit;
         }
         font-size: $base-unit / 2;
         margin-bottom: .5em;
+
+        a {
+            color: $dark-gray;
+            border-bottom: 2px solid $dark-gray;
+        }
+
     }
 
 }
