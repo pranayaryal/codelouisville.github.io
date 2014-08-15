@@ -1,3 +1,17 @@
-name: Code Louisville
-markdown: redcarpet
-pygments: true
+# Site settings
+title: Code Louisville
+email: your-email@domain.com
+description: "Code Louisville is a community-based program that teaches anyone coding skills and connects job seekers with employers."
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: codelouisville
+github_username:  CodeLouisville
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Sass stuff
+sass:
+  sass_dir: assets/css
+  style: compresssed

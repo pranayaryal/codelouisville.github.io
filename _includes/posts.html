@@ -1,0 +1,16 @@
+<section class="blog-posts">
+
+    <div class="row">
+        <h2 class="section-title">Latest Posts</h2>
+    </div>
+
+    <div class="row">
+        <ul class="posts">
+            {% for post in site.posts %}
+            <li>
+                <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></h3>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

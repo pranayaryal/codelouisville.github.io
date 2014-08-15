@@ -1,0 +1,188 @@
+---
+---
+
+// Pull in Sass libraries (from Thoughtbot)
+
+@import "bourbon/bourbon"; // Bourbon - Sass framework
+@import "base/base"; // Bitters - typographic framework
+@import "neat/neat"; // Neat - grid framework
+
+
+// Breakpoints
+$x-small: new-breakpoint(min-width em(480) 4);
+$small: new-breakpoint(min-width em(768) 4);
+$medium: new-breakpoint(min-width em(960) 8);
+$large: new-breakpoint(min-width em(1152) 12);
+$x-large: new-breakpoint(min-width em(1280) 12);
+
+
+// Global custom variables
+$base-unit: 4em;
+
+
+// Global variables
+
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: ($base-unit / 4) 0;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+
+// Main styles
+html {
+    border: none;
+    @include media($medium) {
+        border: 1em solid lighten($light-gray, 5%);
+    }
+
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+section, footer {
+    padding: $base-unit / 2;
+    @include media($medium) {
+        padding: $base-unit;
+    }
+}
+
+.row {
+    @include outer-container;
+    @include clearfix;
+}
+
+
+// Navigation
+header.site-header {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // background: rgba(255,255,255,0.125);
+    border-bottom: 1px solid lighten($light-gray, 5%);
+    padding: $base-unit / 2;
+
+    a {
+        color: $dark-gray;
+
+        &:hover {
+            color: $dark-gray;
+        }
+
+    }
+
+    .page-link {
+        font-size: .85em;
+        text-transform: uppercase;
+        color: darken($light-gray, 30%);
+        margin-left: $base-unit / 2;
+    }
+
+}
+
+.site-title, .site-nav {
+    @include span-columns(6);
+    @include clearfix;
+}
+
+.site-title {
+    font-weight: bold;
+}
+
+.site-nav {
+    text-align: right;
+}
+
+.hero {
+    background: url(https://s3.amazonaws.com/ooomf-com-files/IKMsqwyaR6qN0kq48STw_annapurna.jpg) center center no-repeat;
+    background-size: cover;
+    color: white;
+    padding: $base-unit ($base-unit / 2);
+    @include media($medium) {
+        padding: ($base-unit * 3) $base-unit;
+    }
+
+    .homepage-hero {
+        @include media($medium) {
+            font-size: $base-unit;
+        }
+        font-size: $base-unit / 2;
+        margin-bottom: .5em;
+    }
+
+}
+
+.section-title, .page-header {
+    color: darken($light-gray, 20%);
+    font-weight: normal;
+
+    &:after {
+        content: "";
+        display: block;
+        width: $base-unit / 2;
+        margin-top: $base-unit / 2;
+        border-bottom: 2px solid darken($light-gray, 20%);
+    }
+
+}
+
+.current-courses article {
+    @include span-columns(12);
+
+    @include media(961px) {
+        @include span-columns(4);
+    }
+}
+
+.testimonial {
+    background: lighten($light-gray, 10%);
+
+    blockquote {
+        font-size: 1.5em;
+        color: $dark-gray;
+    }
+
+    cite {
+        display: block;
+    }
+
+}
+
+
+// Posts
+.blog-posts {
+    background: lighten($light-gray, 10%);
+
+    .posts li:not(:last-child) {
+        border-bottom: 1px solid $light-gray;
+    }
+
+    .post-date {
+        font-size: 66.6%;
+        font-weight: normal;
+        float: right;
+    }
+
+}
+
+
+// Footer
+footer.site-footer {
+    margin: 0;
+    background: $dark-gray;
+    color: $light-gray;
+
+    article {
+        @include span-columns(6);
+    }
+
+}
