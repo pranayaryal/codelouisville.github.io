@@ -63,11 +63,6 @@ section, footer {
 
 // Navigation
 header.site-header {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // background: rgba(255,255,255,0.125);
     border-bottom: 1px solid lighten($light-gray, 5%);
     padding: $base-unit / 2;
 
@@ -95,10 +90,12 @@ header.site-header {
 }
 
 .site-title {
-    font-weight: bold;
+    margin: 0;
+    font-weight: normal;
 }
 
 .site-nav {
+    margin-top: 1em;
     text-align: right;
 }
 
@@ -174,6 +171,10 @@ header.site-header {
 
 }
 
+.meta {
+    margin: $base-unit 0;
+}
+
 
 // Footer
 footer.site-footer {
@@ -183,6 +184,10 @@ footer.site-footer {
 
     article {
         @include span-columns(6);
+    }
+
+    .copyright {
+        text-align: right;
     }
 
 }

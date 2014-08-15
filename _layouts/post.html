@@ -6,9 +6,15 @@ layout: default
 
     <div class="row">
         <h2 class="page-header">{{ page.title }}</h2>
-        <header class="">
-            <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/>
-            <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+        <header class="meta">
+            {{ page.date | date: "%b %-d, %Y" }}
+            {% if page.author %}
+                by {{ page.author }}<br/>
+            {% endif %}
+            {% if page.meta %}
+                {{ page.meta }}
+            {% endif %}
+            Tag: {{ page.categories | category_links }}
         </header>
     </div>
 
